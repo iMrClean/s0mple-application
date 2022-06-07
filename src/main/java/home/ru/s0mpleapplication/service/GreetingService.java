@@ -5,4 +5,6 @@ import home.ru.s0mpleapplication.domain.Greeting;
 public interface GreetingService {
     Greeting getHello();
 
+    Greeting getGoodbye();
+
 }

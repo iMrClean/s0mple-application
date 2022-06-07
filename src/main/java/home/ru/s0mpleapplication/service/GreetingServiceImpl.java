@@ -11,4 +11,9 @@ public class GreetingServiceImpl implements GreetingService {
         return new Greeting("Hello, Spring!");
     }
 
+    @Override
+    public Greeting getGoodbye() {
+        return new Greeting("Goodbye");
+    }
+
 }

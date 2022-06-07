@@ -28,4 +28,11 @@ public class GreetingHandler {
                 .body(BodyInserters.fromValue(body));
     }
 
+    public Mono<ServerResponse> goodbye(ServerRequest request) {
+        Greeting body = greetingService.getGoodbye();
+
+        return ServerResponse.ok()
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(BodyInserters.fromValue(body));
+    }
 }
